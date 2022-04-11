@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<fx:root fx:id="MainHBox" prefWidth="131.0" type="javafx.scene.layout.HBox" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+
+   <VBox fx:id="GeneralMessageBox" alignment="CENTER">
+      <children>
+         <HBox alignment="CENTER_LEFT" prefHeight="14.0" prefWidth="95.0">
+            <children>
+                  <Label fx:id="MessageText" text="Text" wrapText="true" />
+            </children>
+         </HBox>
+         <HBox alignment="BOTTOM_RIGHT" prefHeight="14.0" prefWidth="169.0">
+            <children>
+               <Label fx:id="DataText" text="20/54" textAlignment="RIGHT">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+   <HBox.margin>
+      <Insets top="30.0" bottom="30.0" />
+   </HBox.margin>
+</fx:root>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="MessageCloud" onMouseReleased="#ChatOpen" style="-fx-background-color: #e0e0e0; -fx-background-radius: 5 5 5 5; -fx-border-radius: 5 5 5 5;" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="262.0" style="-fx-border-radius: 5 5 5 5; -fx-background-radius: 5 5 5 5;">
+            <children>
+                <Pane prefHeight="34.0" prefWidth="41.0" style="-fx-background-radius: 5 5 5 5; -fx-border-radius: 5 5 5 5;">
+                    <children>
+                        <Label fx:id="FirstCharOfNameMessageCloud" alignment="CENTER" prefHeight="33.0" prefWidth="39.0" style="-fx-background-color: #adcfe6;;" text="A" />
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Pane>
+                <VBox fillWidth="false" prefWidth="222.0">
+                    <children>
+                  <HBox prefHeight="19.0" prefWidth="219.0">
+                     <children>
+                              <Label fx:id="NameMessageCloud" text="Name" />
+                     </children>
+                  </HBox>
+                  <HBox fillHeight="false" prefHeight="7.0" prefWidth="220.0" style="-fx-background-color: #c3c3c3;">
+                     <children>
+                        <HBox prefHeight="14.0" prefWidth="164.0">
+                           <children>
+                                    <Label fx:id="LastMessageCloud" alignment="BOTTOM_LEFT" prefHeight="14.0" prefWidth="240.0" text="Last Message" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="14.0" prefWidth="57.0">
+                           <children>
+                              <Label fx:id="DataText" text="05/5/15">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets right="3.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+    <VBox.margin>
+        <Insets bottom="5.0" top="5.0" />
+    </VBox.margin>
+</fx:root>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="FrameworkOn" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.client.SceneController.UserMessanger.GeneralWindow">
+   <children>
+      <VBox layoutX="-6.0" prefHeight="400.0" prefWidth="611.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="400.0" prefWidth="641.0">
+               <children>
+                  <HBox prefHeight="400.0" prefWidth="269.0">
+                     <children>
+                        <ScrollPane fx:id="AccountScrollPane" fitToHeight="true" fitToWidth="true" prefHeight="600.0">
+                           <content>
+                              <VBox fx:id="MessageCloudBox" prefHeight="398.0" prefWidth="277.0" style="-fx-background-color: #c5c5c5;">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="400.0" prefWidth="342.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="400.0" prefWidth="368.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="336.0" style="-fx-background-color: #c5c5c5;;">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="3.0" right="3.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label fx:id="NicknameLabel" prefHeight="34.0" prefWidth="341.0" text="Nickname" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="4.0" />
+                                 </padding>
+                              </HBox>
+                              <ScrollPane onKeyReleased="#TextTyped" prefHeight="285.0" prefWidth="342.0">
+                                 <content>
+                                    <VBox fx:id="MessageScrollPane" prefWidth="324.0" />
+                                 </content></ScrollPane>
+                              <HBox prefHeight="70.0" prefWidth="377.0">
+                                 <children>
+                                    <ScrollPane prefHeight="131.0" prefWidth="332.0">
+                                       <content>
+                                          <TextArea fx:id="EnterTextField" onKeyReleased="#TextTyped" prefHeight="69.0" prefWidth="314.0" wrapText="true" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
